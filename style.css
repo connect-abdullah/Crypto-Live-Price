@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient( #370a66, #091221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#head span{
+    color: #b001cf;
+}
+
+.container {
+    text-align: center;
+    background: #cdb5e8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 17px 7px rgb(0 0 0);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 20px;
+}
+select {
+    padding: 5px 4px;
+    font-size: 1.1rem;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#crypto-symbol {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 6rem;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+}
+
+button:hover {
+    background-color: #42ab4e;
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+
+#crypto-name {
+    font-size: 2em;
+    color: #333;
+}
+
+#crypto-price {
+    font-size: 1.5em;
+    color: #f50808;
+    margin: 10px 0;
+}
+
+#crypto-market-cap {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Spinner styles */
+#loader {
+    border: 8px solid #7b7474;
+    border-top: 8px solid #6a11cb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    display: none; /* Hidden by default */
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

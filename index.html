@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Teller</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=63192&format=png&color=000000" type="image/x-icon">
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="head">Crypto <span>Price</span></h1>
+      <div class="search-box">
+        <select id="crypto-pair">
+          <option value="BTCUSDT">BTC/USDT</option>
+          <option value="ETHUSDT">ETH/USDT</option>
+          <option value="LTCUSDT">LTC/USDT</option>
+          <option value="XRPUSDT">XRP/USDT</option>
+          <option value="BCHUSDT">BCH/USDT</option>
+          <option value="ADAUSDT">ADA/USDT</option>
+          <option value="DOTUSDT">DOT/USDT</option>
+          <option value="BNBUSDT">BNB/USDT</option>
+          <option value="LINKUSDT">LINK/USDT</option>
+          <option value="SOLUSDT">SOL/USDT</option>
+          <option value="DOGEUSDT">DOGE/USDT</option>
+          <option value="SHIBUSDT">SHIB/USDT</option>
+          <option value="USDCUSDT">USDC/USDT</option>
+          <option value="LUNAUSDT">LUNA/USDT</option>
+          <option value="AVAXUSDT">AVAX/USDT</option>
+          <option value="UNIUSDT">UNI/USDT</option>
+          <option value="MATICUSDT">MATIC/USDT</option>
+          <option value="ATOMUSDT">ATOM/USDT</option>
+          <option value="VETUSDT">VET/USDT</option>
+          <option value="XMRUSDT">XMR/USDT</option>
+          <option value="XTZUSDT">XTZ/USDT</option>
+          <option value="TRXUSDT">TRX/USDT</option>
+          <option value="FILUSDT">FIL/USDT</option>
+          <option value="XLMUSDT">XLM/USDT</option>
+          <option value="AAVEUSDT">AAVE/USDT</option>
+          <option value="ETHBTC">ETH/BTC</option>
+          <option value="LTCBTC">LTC/BTC</option>
+          <option value="XRPBTC">XRP/BTC</option>
+          <option value="BCHBTC">BCH/BTC</option>
+          <option value="ADABTC">ADA/BTC</option>
+          <option value="SOLBTC">SOL/BTC</option>
+          <option value="DOGEBTC">DOGE/BTC</option>
+          <option value="SHIBBTC">SHIB/BTC</option>
+          <option value="USDCBTC">USDC/BTC</option>
+          <option value="LUNABTC">LUNA/BTC</option>
+          <option value="AVAXBTC">AVAX/BTC</option>
+          <option value="UNIBTC">UNI/BTC</option>
+          <option value="MATICBTC">MATIC/BTC</option>
+          <option value="ATOMBTC">ATOM/BTC</option>
+          <option value="VETBTC">VET/BTC</option>
+          <option value="XMRBTC">XMR/BTC</option>
+          <option value="XTZBTC">XTZ/BTC</option>
+          <option value="TRXBTC">TRX/BTC</option>
+          <option value="FILBTC">FIL/BTC</option>
+          <option value="XLMBTC">XLM/BTC</option>
+          <option value="AAVEBTC">AAVE/BTC</option>
+        </select>
+        <button id="btn">Get Price</button>
+      </div>
+      <div class="result">
+        <h2 id="crypto-name"></h2>
+        <p id="crypto-price"></p>
+      </div>
+      <div id="loader"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
